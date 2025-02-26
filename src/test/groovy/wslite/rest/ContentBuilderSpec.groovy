@@ -259,7 +259,7 @@ class ContentBuilderSpec extends Specification {
         ContentType.JSON.toString() == contentTypeHeader.mediaType
     }
 
-    @Issue('https://github.com/jwagenleitner/groovy-wslite/issues/33')
+    @Issue('https://github.com/recaifurkan/groovy-wslite/issues/33')
     void 'json content using GStrings should work with JSON object'() {
         given:
         def value = "a"
@@ -274,7 +274,7 @@ class ContentBuilderSpec extends Specification {
         'a' == json.param
     }
 
-    @Issue('https://github.com/jwagenleitner/groovy-wslite/issues/33')
+    @Issue('https://github.com/recaifurkan/groovy-wslite/issues/33')
     void 'json content using GStrings should work with JSON array'() {
         given:
         def value1 = "a"
@@ -390,7 +390,7 @@ class ContentBuilderSpec extends Specification {
         null == builderJson.getData()
     }
 
-    @Issue('https://github.com/jwagenleitner/groovy-wslite/issues/82')
+    @Issue('https://github.com/recaifurkan/groovy-wslite/issues/82')
     void 'multipart overrides default content type'() {
         given:
         def builder = new ContentBuilder('application/json', 'UTF-8')
@@ -402,7 +402,7 @@ class ContentBuilderSpec extends Specification {
         builder.contentTypeHeader.startsWith(ContentType.MULTIPART.toString())
     }
 
-    @Issue('https://github.com/jwagenleitner/groovy-wslite/issues/83')
+    @Issue('https://github.com/recaifurkan/groovy-wslite/issues/83')
     void 'multipart allows optional content type and filename parameters'() {
         given:
         def builder = new ContentBuilder(null, null)
