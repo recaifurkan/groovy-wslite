@@ -22,14 +22,16 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.apache.groovy:groovy-all:4.0.6'
-    testImplementation('org.spockframework:spock-core:2.3-groovy-4.0') {
+    implementation 'org.apache.groovy:groovy:4.0.23'
+    implementation 'org.apache.groovy:groovy-xml:4.0.23'
+    implementation 'org.apache.groovy:groovy-json:4.0.23'
+    testImplementation('org.spockframework:spock-core:2.4-M5-groovy-4.0') {
         exclude module: 'groovy-all'
     }
 
     testImplementation 'net.bytebuddy:byte-buddy:1.12.23'
     codenarc("org.codenarc:CodeNarc:3.2.0-groovy-4.0")
-    codenarc('org.apache.groovy:groovy-all:4.0.6')
+    codenarc('org.apache.groovy:groovy:4.0.23')
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
@@ -80,8 +82,8 @@ publishing {
               pom {
                 name = 'groovy-wslite'
                 description = 'Lightweight SOAP and REST webservice clients for Groovy'
-                url = 'https://github.com/jwagenleitner/groovy-wslite'
-                inceptionYear = '2011'
+                url = 'https://github.com/recaifurkan/groovy-wslite'
+                inceptionYear = '2025'
                 licenses {
                     license {
                       name = 'The Apache Software License, Version 2.0'
@@ -90,14 +92,14 @@ publishing {
                     }
                 }
                 scm {
-                  url = 'scm:git:git@github.com:jwagenleitner/groovy-wslite.git'
-                  connection = 'https://github.com/jwagenleitner/groovy-wslite'
+                  url = 'scm:git:git@github.com:recaifurkan/groovy-wslite.git'
+                  connection = 'https://github.com/recaifurkan/groovy-wslite'
                 }
                 developers {
                   developer {
                       id = 'jwagenleitner'
                       name = 'John Wagenleitner'
-                      email = 'john.wagenleitner@gmail.com'
+                      email = 'recaifurkan.rfb@gmail.com'
                   }
                 }
               }

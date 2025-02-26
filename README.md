@@ -9,7 +9,7 @@ request.  No streams are used and all request/responses are buffered in memory f
 
 **Note**
 
-Please consult the [Changelog] (https://github.com/jwagenleitner/groovy-wslite/blob/master/CHANGELOG.md) for any
+Please consult the [Changelog] (https://github.com/recaifurkan/groovy-wslite/blob/master/CHANGELOG.md) for any
 breaking changes.
 
 ## 1.0

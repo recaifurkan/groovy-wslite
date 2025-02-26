@@ -72,7 +72,7 @@ class SOAPMessageBuilderSpec extends Specification {
         assert env.@foo.text() == 'bar'
     }
 
-    @Issue('https://github.com/jwagenleitner/groovy-wslite/issues/30')
+    @Issue('https://github.com/recaifurkan/groovy-wslite/issues/30')
     void 'can handle nested header and body tags'() {
         when: 'message body has nested header or body elements'
         def message = new SOAPMessageBuilder().build {
